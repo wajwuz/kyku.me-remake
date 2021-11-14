@@ -1,0 +1,57 @@
+<div class="head">
+    <h1>
+        <a href="https://kyku.me/">kyku<small>.me</small></a>
+    </h1>
+</div>
+<div class="content">
+    <ul>
+        <li>
+            <span class="emoji">📧</span>
+            <span class="service">Mail</span>
+            <span class="link">
+                <a href="mailto:kontakt@kyku.me" class="email">kontakt@kyku.me</a>
+            </span>
+        </li>
+                    
+        <li>
+            <span class="emoji">📝</span>
+            <span class="service">Paste</span>
+            <a href='https://paste.kyku.me'><span class="link">hastebin</span></a>
+        </li>
+        <li>
+            <span class="emoji">🎤</span>
+            <span class="service">Teamspeak3</span>
+            <a href='ts3server://kyku.me'><span class="link">kyku.me</span></a>
+        </li>
+        <li>
+            <span class="emoji">🚗</span>
+            <span class="service">Natężenie ruchu</span>
+            <span class="text"><span title="X m. temu" style="color:hsl(135, 100%, 50%)"><%= networkIntensity %>%</span></span>
+        </li>
+                   
+    </ul>
+    <ul>
+        <li>
+            <span class="emoji">💻</span>
+            <span class="service">IP</span>
+            <a href="https://kyku.me/ip/<%= remoteAddress %>">
+                <span class="link"><%= remoteAddress %></span>
+            </a>
+        </li>
+        <li>
+            <span class="emoji">🌡️</span>
+            <span class="service">Load</span>
+            <span class="text"><%= loadAverage %></span>
+        </li>
+        <li>
+            <span class="emoji">🔌</span>
+            <span class="service">Uptime</span>
+            <span class="text"><%= systemUptime %></span>
+        </li>
+        <li>
+            <span class="emoji">💾</span>
+            <span class="service">HDD</span>
+            <span class="text"><%= diskUsage %>%</span>
+        </li>
+    </ul>
+</div>
