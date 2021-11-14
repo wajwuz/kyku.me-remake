@@ -12,6 +12,7 @@ app.get('/', async function(request, response) {
         remoteAddress: request.headers['x-forwarded-for'] || request.socket.remoteAddress,
         diskUsage: diskInfo.getDiskInfoSync()[0].capacity,
         networkLastPacket: await getLastPacket(),
+        networkLoad: Math.floor(Math.random() * 100),
         loadAverage: os.loadavg()
     });
 });
