@@ -1,6 +1,6 @@
 # kyku.me - remake
 ## Installing
-Make you you have installed Nodejs and npm on your's machine.
+Make sure you have installed Nodejs and npm on your's machine.
 
 ```sh
 git clone https://github.com/marszello/kyku.me-remake.git
